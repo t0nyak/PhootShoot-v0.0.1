@@ -1,3 +1,5 @@
+from django.template.loader import get_template
+from django.template import Context
 from django.http import HttpResponse 
  
 HTML = """ 
@@ -24,4 +26,6 @@ h1 { font­weight:normal; }
 </body></html> """ 
  
 def landing_page(request): 
-    return HttpResponse(HTML) 
+    landing = get_template('landing.html')
+    html = landing.render()
+    return HttpResponse(html)

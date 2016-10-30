@@ -9,15 +9,16 @@
 		<meta content="juego,futbol,manager,online,ganar dinero,liga,equipo,comunio,jugar partido" name="keywords" />
 		<meta content="width=device-width, initial-scale=1" name="viewport">
 
+		{% load static %}
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />		
+		<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="screen" />		
 	</head>
 	<body>
+		<div class="welcome">			
+		</div>
 		<section class="container">
-			<div class="welcome">
-				<h1>My first bootstrap page</h1>
-			</div>
+			<h1>My first bootstrap page</h1>		
 			<div class="content">
 				<p>This is some text.</p>
 			</div>
