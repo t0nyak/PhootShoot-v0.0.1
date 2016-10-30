@@ -85,6 +85,13 @@ DATABASES = {
     }
 }
 
+# Templates
+# Folder where the templates are saved
+
+TEMPLATE_DIRS = (
+    os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
+    )
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
