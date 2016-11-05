@@ -1,0 +1,138 @@
+/* Líneas para añadir fonts */
+@font-face {
+	font-family: ArmWrestler;
+	src: url(ArmWrestler.ttf);
+}
+@font-face {
+	font-family: FjallaOne;
+	src: url(FjallaOne-Regular.otf);
+}
+@font-face {
+	font-family: Lato;
+	src: url(lato/Lato-Regular.ttf);
+}
+
+html{
+	background: url("../images/fondo.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size:cover;	
+  	
+}
+body{
+	background-color:transparent;
+	font-family: Lato,ArmWrestler,Verdana;
+}
+header{
+	height:80px;
+	/*background-color:#FCE7A4;*/
+	background-color:#F9EDCB;
+	/*background-color: rgba(252, 231, 164, 1);*/
+	-webkit-box-shadow: 0px 4px 14px 4px rgba(21,21,21,1);
+	-moz-box-shadow: 0px 4px 14px 4px rgba(21,21,21,1);
+	box-shadow: 0px 4px 14px 4px rgba(21,21,21,1);
+}
+h1 {
+	font-family: Lato,ArmWrestler,Verdana;
+}
+
+
+.container{
+	margin-top:70px;
+	/*background-color:#FCE7A4;*/
+	background-color:#F9EDCB;
+}
+
+/* ELEMENTOS DE LA HOME */
+
+/* Header */
+.header-content {
+	margin-top:0;
+	display:inline block;
+	padding:0;
+}
+.header-content img {
+	float:left;
+	margin-right:30px;
+}
+.header-content h5 {
+	width: 400px;
+	float:left;
+	margin: 30px 0;
+}
+.login-head {
+	width: 140px;
+	margin: 24px 5px;
+}
+.header-content input[type="button"], 
+.header-content input[type="submit"] {
+	border:0;
+	margin: 0 5px;
+	padding: 5px 14px;
+	font-weight:bold;
+}
+
+/* Texto INFO Landing-Page */
+
+.landing {
+	padding-right: 15px !important;
+	padding-left: 25px !important;
+	padding-bottom: 20px !important;
+	padding-top: 0px !important;
+	margin-bottom: 0;
+	background-color: transparent;
+}
+.landing h1{
+	font-size:44px;
+}
+#container-home {
+
+	-webkit-box-shadow: 0px 0px 14px 4px rgba(21,21,21,1);
+	-moz-box-shadow: 0px 0px 14px 4px rgba(21,21,21,1);
+	box-shadow: 0px 0px 14px 4px rgba(21,21,21,1);
+}
+#form-home {
+	padding: 30px;
+	margin-bottom:20px;
+}
+.intro-feature {
+	margin-left: 48px;
+	margin-right: 68px;
+}
+.intro-feature i {
+	margin-right: 5px;
+}
+.intro-feature p {
+	padding-left: 35px;
+	
+}
+
+/* Formulario Registro y Login */
+
+.form-reg-login {
+	padding:20px;
+	margin-top:40px;
+	margin-right:20px;
+	border-radius:10px;
+	background-color: rgba(255,255,255,0.6);
+	text-align:center;
+}
+#formularioRegistro input {
+	width: 100%;
+	margin: 0 auto;
+	padding: 6px;
+	margin: 10px 0;
+}
+#formularioRegistro input[type="submit"] {
+	width:60%;
+	border:0;
+	padding:8px;
+}
+#formularioRegistro input[type="checkbox"] {
+	width:auto;
+	padding-top:3px;
+}
+#formularioRegistro label {
+	
+}
