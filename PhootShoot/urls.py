@@ -1,4 +1,4 @@
-"""football URL Configuration
+"""PhootShoot URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.8/topics/http/urls/
@@ -16,6 +16,10 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from PhootShoot.views import landing_page
+from django.conf import settings
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.conf.urls.static import static
+admin.autodiscover()
 
 urlpatterns = [
 	url(r'^admin/', include(admin.site.urls)),
@@ -35,4 +39,5 @@ urlpatterns = [
 	url(r'^player/(\d{1,12})/$', landing_page),
 	url(r'^shop/$', landing_page),
 	url(r'^payment/$', landing_page),
+    url(r'^static/(?P<path>.*)$', 'django.views.static.serve'),
 ]
