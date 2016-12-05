@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+	<head>
+		<title>PhootShoot | El nuevo manager de futbol online con jugadores reales de todo el mundo</title>
+
+		<meta charset="UTF-8" />
+		<meta content="PHUPHA Entertainment" name="author" />
+		<meta content="Juego para ser el manager de tu equipo de futbol, fichando jugadores de las ligas más importantes del mundo y donde puedes ganar dinero real" name="description" />
+		<meta content="juego,futbol,manager,online,ganar dinero,liga,equipo,comunio,jugar partido" name="keywords" />
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+
+		{% load static %}
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="screen" />
+		<link rel="stylesheet" href="{% static 'css/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+		
+	</head>
+	<body>
+		<header>
+			<div class="container header-content">
+				<img src="http://k38.kn3.net/82E5550C2.png" width="200" />
+				<h5>¡Quedan 58 días para comenzar la fase Beta Tester!</h5>
+				<form><input type="text" class="login-head" placeholder="E-mail" /><input type="text" class="login-head" placeholder="Password" /><input type="submit" class="btn-info" value="Entrar"/><input type="button" class="btn-danger" value="Foro" /></form>
+			</div>
+		</header>
+		<section class="container text-success" id="container-home">
+			 <div class="row" id="form-home">
+ 				<div class="col-lg-7 col-md-8">
+ 					<div class="jumbotron landing">
+ 						<h1><b>PhootShoot Beta <small>v0.1</small></b></h1>
+ 						<p><b>PhootShoot</b> es el manager de fútbol más completo y directo y con el que además puedes <b>ganar dinero real</b>.</p>
+ 					</div>
+ 					<div class="intro-feature">
+ 						<h3><i class="fa fa-check"></i> Ficha jugadores de cualquier liga</h3>
+ 						<p>En PhootShoot tienes acceso a jugadores de todas las ligas europeas.</p>
+ 						<h3><i class="fa fa-check"></i> Gana dinero de verdad</h3>
+ 						<p>Los fondos de tu equipo son canjeables por dinero real.</p>
+ 						<h3><i class="fa fa-check"></i> Compite con managers de todo el mundo</h3>
+ 						<p>El sistema jerárquico de ligas de PhootShoot hace el juego mucho más emocionante y competitivo.</p>
+ 						<h3><i class="fa fa-check"></i> Funda un club legendario</h3>
+ 						<p>¿Serás capaz de batir todos los records? Entra ya y compruébalo.</p>
+ 					</div>
+ 				</div>
+  				<div class="col-lg-5 col-md-4">
+					<div class="form-reg-login">
+						<h3 class="text-center">REGISTRO</h3>
+						<form id="formularioRegistro" action="" method="POST">
+							<input type="email" name="mail" id="mailReg" placeholder="E-mail" />
+							<input type="password" name="pass" id="passReg" placeholder="Password" />
+							<input type="password" name="pass" id="passReg2" placeholder="Repite password" />
+							<input type="checkbox" name="terms" /> Acepto terms & conditions
+							<input type="submit" class="btn-success" name="pass" id="passReg" value="REGISTRAR" />
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>		
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+</html>
