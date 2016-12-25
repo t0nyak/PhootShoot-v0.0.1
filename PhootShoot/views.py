@@ -29,3 +29,8 @@ def landing_page(request):
     landing = get_template('landing.html')
     html = landing.render()
     return HttpResponse(html)
+
+def register(request):
+    register = get_template('login.html')
+    html = register.render()
+    return HttpResponse(html)
