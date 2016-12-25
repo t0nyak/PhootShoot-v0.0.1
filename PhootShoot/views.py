@@ -30,7 +30,13 @@ def landing_page(request):
     html = landing.render()
     return HttpResponse(html)
 
-def register(request):
+def register(request,action):
+    act = str(action)
+    register = get_template('login.html')
+    html = register.render({'action':act})
+    return HttpResponse(html)
+
+def login(request):
     register = get_template('login.html')
     html = register.render()
     return HttpResponse(html)

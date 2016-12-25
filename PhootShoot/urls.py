@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from PhootShoot.views import landing_page,register
+from PhootShoot.views import landing_page,login,register
 from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls.static import static
@@ -24,8 +24,7 @@ admin.autodiscover()
 urlpatterns = [
 	url(r'^admin/', include(admin.site.urls)),
 	url(r'^$', landing_page),
-	url(r'^register/$', register),
-	url(r'^login/$', landing_page),
+	url(r'^user/(register|login)/$', register),
 	url(r'^user/$', landing_page),
 	url(r'^team/$', landing_page),
 	url(r'^team/(\d{1,10})/$', landing_page),
